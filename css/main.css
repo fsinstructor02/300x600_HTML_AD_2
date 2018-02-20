@@ -1,0 +1,123 @@
+/* Ids  Class and other vars */
+
+.ad,
+.bg {
+    width: 300px;
+    height: 600px;
+}
+
+
+.ad {
+    /* width: 300px;
+    height: 600px; */
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: #ccc 4px 3px 4px;
+}
+
+
+
+.bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url('../images/vemon.jpg') no-repeat;
+    filter: blur(10px);
+    -ms-filter: blur(10px);
+    animation: bg 2s ease-in-out forwards;
+    -o-animation: bg 2s ease-in-out forwards;
+    -webkit-animation: bg 2s ease-in-out forwards;
+    -moz-animation: bg 2s ease-in-out forwards;
+    -ms-animation: bg 2s ease-in-out forwards;
+}
+
+
+@keyframes bg {
+    0% {filter: blur(10px);}
+    100% {filter: blur(0px);}
+}
+
+@-o-keyframes bg {
+    0% {filter: blur(10px);}
+    100% {filter: blur(0px);}
+}
+
+@-ms-keyframes bg {
+    0% {filter: blur(10px);}
+    100% {filter: blur(0px);}
+}
+
+@-webkit-keyframes bg {
+    0% {-ms-filter: blur(10px);}
+    100% {-ms-filter: blur(0px);}
+}
+
+@-ms-keyframes bg {
+    0% {filter: blur(10px);}
+    100% {filter: blur(0px);}
+}
+
+.btn {
+    padding: 10px; /*Top right bottom left*/
+    background-color: rgba(204, 204, 204, .85);
+    border: 1px solid #000;
+    position: absolute;
+    bottom: 10px;
+    margin: 0 25%;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 25px;
+    transition: ease-in-out 1s background-color;
+}
+
+
+.btn:hover {
+    color: #fff;
+    background-color:rgba(26, 35, 64, .85);
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    right: -100px;
+    background: url('../images/logo.png') no-repeat;
+    width: 100px;
+    height: 20%;
+    background-size: contain;
+    animation: logo 1s 2s ease-in-out forwards;
+    -o-animation: logo 1s 2s ease-in-out forwards;
+    -ms-animation: logo 1s 2s ease-in-out forwards;
+    -webkit-animation: logo 1s 2s ease-in-out forwards;
+    -moz-animation: logo 1s 2s ease-in-out forwards;
+}
+
+
+@keyframes logo {
+    0%{right: -100px;}
+    100% {right: 10px;}
+}
+
+@-ms-keyframes logo {
+    0%{right: -100px;}
+    100% {right: 10px;}
+}
+
+@-o-keyframes logo {
+    0%{right: -100px;}
+    100% {right: 10px;}
+}
+
+@-webkit-keyframes logo {
+    0%{right: -100px;}
+    100% {right: 10px;}
+}
+
+@-moz-keyframes logo {
+    0%{right: -100px;}
+    100% {right: 10px;}
+}
